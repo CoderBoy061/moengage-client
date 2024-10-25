@@ -26,9 +26,10 @@ const ListDetails = () => {
   }, [message, error, dispatch]);
 
   // ====================fetching the every single data from the api for showing details dynamically ===========================
+  // `/api/${id}.json` for loacl environment 
   useEffect(() => {
     axios
-      .get(`/api/${id}.json`, {
+      .get(`https://http.dog/${id}.json`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json",
