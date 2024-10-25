@@ -29,7 +29,7 @@ const ListDetails = () => {
   // `/api/${id}.json` for loacl environment 
   useEffect(() => {
     axios
-      .get(`https://http.dog/${id}.json`, {
+      .get(`/api/${id}.json`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json",
